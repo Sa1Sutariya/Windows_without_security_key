@@ -1,19 +1,58 @@
-# WindowsAdminToolkit
-A collection of scripts designed to facilitate various administrative tasks on Windows systems without the need for a security key. The repository aims to provide tools for system administrators and power users to enhance their workflow and automate tasks that typically require elevated privileges.
-## Scripts Description
+# Windows_without_security_key
+# Windows Security and Binary File Management Scripts
 
-- **without_windows_key.vbs**: A Visual Basic script that allows running tasks with administrative privileges without user account control (UAC) prompts. It achieves this by scheduling the task with elevated privileges and executing it immediately.
+This repository contains scripts for managing BitLocker encryption without a security key, comparing binary files, and converting hexadecimal strings to binary data.
 
-- **Make_bin.py**: A Python script that converts hexadecimal strings to binary data and vice versa. This can be useful in various administrative tasks, such as data manipulation or when working with binary files.
-## Usage Instructions
+## Installation
 
-- **without_windows_key.vbs**: To use this script, simply run it with administrative privileges. The script will check if it needs to schedule itself as a task with elevated privileges and execute accordingly.
+To run the scripts in this repository, you'll need:
+- For VBS script: Ensure you have the right permissions to execute scripts on your system.
+- For Python scripts (`compare_bin.py` and `Make_bin.py`): Python must be installed on your system.
 
-- **Make_bin.py**: Run this script with Python. It takes a hexadecimal string as input and outputs the corresponding binary data, and vice versa. Ensure you have Python installed on your system to use this script.
-## Prerequisites
+Ensure that you follow any additional setup instructions specific to each script.
 
-- For **without_windows_key.vbs**: Windows operating system with administrative privileges.
-- For **Make_bin.py**: Python installed on your system.
-## Disclaimer
+## Usage
 
-The scripts provided in this repository are for educational and legal purposes only. Users are responsible for ensuring their use of the scripts complies with all applicable laws and regulations. The creators of this repository do not assume any liability for misuse of the scripts.
+- **without_windows_key.vbs**: Automates unlocking and locking a BitLocker-encrypted drive. It can also lock the workstation if the compared binary files are different.
+
+```vbscript
+REM: Example of running the script
+wscript.exe without_windows_key.vbs
+```
+
+- **compare_bin.py**: Used to compare two binary files to check for equality.
+
+```python
+# Example of running the script
+python compare_bin.py
+```
+
+- **Make_bin.py**: Converts a hexadecimal string to binary data and saves it in a file.
+
+```python
+# Example of running the script
+python Make_bin.py
+```
+
+## Contributing
+
+Your contributions are welcome! Feel free to submit pull requests or raise issues for enhancements or bug fixes.
+
+```vbscript
+REM: Example of running the script
+wscript.exe without_windows_key.vbs
+```
+
+- **compare_bin.py**: Used to compare two binary files to check for equality.
+
+```python
+# Example of running the script
+python compare_bin.py
+```
+
+- **Make_bin.py**: Converts a hexadecimal string to binary data and saves it in a file.
+
+```python
+# Example of running the script
+python Make_bin.py
+```
