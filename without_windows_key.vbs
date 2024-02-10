@@ -1,7 +1,7 @@
 Option Explicit
 Dim file1, file2
 
-REM:<RunAsAdminNoUAC>
+REM: Windows Admin Toolkit - Run as Admin without UAC prompt
 With CreateObject("WScript.Shell")
   ' If the script is being run with administrative privileges, execute the main logic.
   If WScript.Arguments.Named.Exists("CreateTask") Then
