@@ -1,3 +1,4 @@
+# Part of Windows Admin Toolkit - Handling binary data for administrative tasks
 import binascii
 
 # Example hexadecimal string
